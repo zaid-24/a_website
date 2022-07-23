@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: inline-block;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.top {
+    margin-left: 210px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 5px;
+}
+
+.navbar .services-1 {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.274);
+    padding: 12px 8px;
+    border-radius: 2px;
+}
+
+.navbar_buttons{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6%;
+    background-color: white;
+}
+.navbar_buttons:hover{
+    background-color: orange;
+}
+/* .navbar_buttons{
+    background-color: #fff;
+} */
+.logo img {
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -150px;
+}
+
+.jobs {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.navbar li:not(.covid):hover {
+    color: blueviolet;
+    border-radius: 2px;
+}
+
+.navbar .covid {
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: orangered;
+}
+
+.navbar .navbar_buttons img {
+    height: 10px;
+}
+
+.navbar .new {
+    text-align: right;
+}
+
+.new strong {
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.navbar img {
+    height: 45px;
+}
+
+.navbar ul {
+    margin: auto;
+}
+
+.box {
+    background-image: url("./images/bg_img.jpg");
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.box h1 {
+    margin-top: -1%;
+    margin-left: 90px;
+}
+
+.box .navbar .low li:hover {
+    color: white;
+}
+
+.leftpart {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 811px;
+    margin-left: 5%;
+    padding: 2% 2.5%;
+}
+
+.search-bar {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 4px;
+    padding: 0px 47px;
+}
+
+.search-bar input {
+    padding: 10px 5px;
+}
+
+.search-bar strong {
+    background-color: blueviolet;
+    padding: 6px 36px;
+    padding-bottom: 11px;
+}
+
+.advanced-search p {
+    margin-right: 7%;
+    text-align: right;
+}
+
+.searches-2 {
+    display: inline-block;
+    max-width: 653px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 22px;
+
+}
+
+h4 {
+    display: inline-block;
+}
+
+.right_box {
+    display: inline-block;
+    padding: 7px;
+}
+
+.left_box {
+    display: inline-block;
+    padding: 7px;
+}
+
+.right_part {
+    display: inline-block;
+    background-color: black;
+    margin-left: 1%;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.inner-div {
+    background-color: white;
+    color: black;
+    height: 156px;
+    width: 150px;
+    font-size: 12px;
+    padding: 32px;
+    text-align: center;
+}
+
+.inner-div .new-to-monster {
+    margin-top: 10px;
+}
+
+.innermost-div {
+    margin-top: 10px;
+}
+
+.upload-resume {
+    margin-left: -4%;
+    width: 92%;
+    background-color: orange;
+    color: white;
+    display: inline-block;
+    padding: 7px 15px;
+}
+
+.create-job-alert {
+    margin-left: -11%;
+    width: 85%;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 7px 30px;
+    color: blueviolet;
+}
+
+.container {
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+.info {
+    margin-left: 2%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-170px * 7));
+    }
+}
+
+.slidebar img {
+    height: 65px;
+    width: 150px;
+    margin: 0 20px;
+}
+
+.slide-control {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    align-items: center;
+    width: 100%;
+}
+
+/* making the site responsive */
+@media screen and (max-width:1400px) {
+    .box {
+        margin: 10px auto;
+    }
+    .right_part {
+        position: relative;
+        margin: 10px 25%;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    button {
+        font-size: 12px;
+    }
+    .navbar {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    button {
+        padding: 0;
+    }
+    .navbar li {
+        padding: 4px 4px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .leftpart {
+        width: 80%;
+        margin-left: 3%;
+        padding-left: 0%;
+    }
+    .search-bar {
+        padding: 0;
+    }
+    .searches-2 {
+        position: relative;
+    }
+}

@@ -1,0 +1,1 @@
+Website was originally tested on 67% zoom on firefox and google chrome and it was working fine.
